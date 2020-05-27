@@ -1,0 +1,149 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:padding="0dp"
+    tools:context=".Next"
+    android:background="@drawable/activity_next1">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+            <com.google.android.gms.ads.AdView
+                xmlns:ads="http://schemas.android.com/apk/res-auto"
+                android:id="@+id/adView"
+                android:layout_width="wrap_content"
+                android:layout_height="34dp"
+                android:layout_centerHorizontal="true"
+                android:layout_alignParentBottom="true"
+                ads:adSize="BANNER"
+                ads:adUnitId="ca-app-pub-3940256099942544/6300978111">
+            </com.google.android.gms.ads.AdView></RelativeLayout></ScrollView>
+
+
+
+    <ScrollView
+        android:id="@+id/scroll"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+
+            <TextView
+                android:id="@+id/next_txt"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_marginBottom="30dp"
+                android:gravity="center"
+                android:paddingTop="37dp"
+                android:paddingBottom="20dp"
+                android:text="text"
+                android:textSize="20sp">
+
+            </TextView>
+
+
+            <TableLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/next_txt"
+                android:layout_centerInParent="true"
+
+                android:layout_marginBottom="30dp"
+                android:orientation="horizontal"
+                android:padding="0dp"
+                android:paddingTop="20dp"
+                android:paddingBottom="20dp">
+
+                <Button
+
+                    android:id="@+id/prev_bton"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerInParent="true"
+                    android:layout_margin="4dp"
+                    android:background="#8BE91E63"
+                    android:drawableLeft="@drawable/ic_speech"
+                    android:text="SPEECH" />
+
+
+                <Button
+                    android:id="@+id/stop_bton"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerInParent="true"
+                    android:layout_margin="4dp"
+                    android:background="#8BE91E63"
+                    android:drawableLeft="@drawable/ic_stop"
+                    android:text="Stop" />
+
+
+                <Button
+                    android:id="@+id/copy_bton"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerInParent="true"
+                    android:layout_margin="4dp"
+                    android:background="#8BE91E63"
+                    android:drawableLeft="@drawable/ic_copy"
+                    android:text="COPY" />
+
+
+                <Button
+                    android:id="@+id/share_bton"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerInParent="true"
+                    android:layout_margin="4dp"
+                    android:background="#8BE91E63"
+                    android:drawableLeft="@drawable/ic_share"
+                    android:text="SHARE" />
+
+                <Button
+                    android:id="@+id/next_bton"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerInParent="true"
+                    android:layout_margin="4dp"
+                    android:background="#8BE91E63"
+                    android:drawableRight="@drawable/ic_next"
+                    android:text="COMMENT" />
+
+
+            </TableLayout>
+
+
+        </RelativeLayout>
+
+
+    </ScrollView>
+
+    <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+            <com.google.android.gms.ads.AdView
+                xmlns:ads="http://schemas.android.com/apk/res-auto"
+                android:id="@+id/adViewe"
+                android:layout_width="wrap_content"
+                android:layout_height="34dp"
+                android:layout_centerHorizontal="true"
+                android:layout_alignParentBottom="true"
+                ads:adSize="BANNER"
+                ads:adUnitId="ca-app-pub-3940256099942544/6300978111">
+            </com.google.android.gms.ads.AdView></RelativeLayout>
+
+
+
+
+
+
+</RelativeLayout>
